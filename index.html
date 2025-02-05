@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCOM Homepage</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f3f3f3; margin: 0; padding: 0; text-align: center; }
+        .navbar { background-color: #1E3A8A; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
+        .navbar a, .navbar p { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; }
+        .navbar .dropdown { position: relative; display: inline-block; }
+        .navbar .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); text-align: left; }
+        .navbar .dropdown-content a { color: black; padding: 10px; display: block; text-decoration: none; }
+        .navbar .dropdown-content a:hover { background-color: #ddd; }
+        .navbar .dropdown:hover .dropdown-content { display: block; }
+        .navbar-title { color: white; font-size: 20px; font-weight: bold; margin-left: 15px; }
+        .announcements { background-color: white; padding: 20px; margin: 20px auto; width: 80%; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">CCOM Grant Reporting</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">My Progress Reports</a>
+            <a href="#">Groups</a>
+            <a href="#">Archive</a>
+            <div class="dropdown">
+                <p href="#">Required Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Bio</a>
+                    <a href="#">Challenges</a>
+                    <a href="#">Effort Report and Contributions</a>
+                    <a href="#">Narratives</a>
+                    <a href="#">Future Direction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p href="#">Optional Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Attended</a>
+                    <a href="#">Award/Honor</a>
+                    <a href="#">Field Program</a>
+                    <a href="#">Graduate Education</a>
+                    <a href="#">Invention</a>
+                    <a href="#">Outreach</a>
+                    <a href="#">Seminars and Presentations</a>
+                    <a href="#">Visit Made</a>
+                    <a href="#">Visitor</a>
+                    <a href="#">Additional Information</a>
+                </div>
+            </div>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+    <div class="announcements">
+        <h2>Announcements</h2>
+        <p>No new announcements at the moment.</p>
+    </div>
+</body>
+</html>
