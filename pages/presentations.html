@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCOM Homepage</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f3f3f3; margin: 0; padding: 0; text-align: center; }
+        .navbar { background-color: #1E3A8A; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
+        .navbar a, .navbar p { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; }
+        .navbar .dropdown { position: relative; display: inline-block; }
+        .navbar .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); text-align: left; }
+        .navbar .dropdown-content a { color: black; padding: 10px; display: block; text-decoration: none; }
+        .navbar .dropdown-content a:hover { background-color: #ddd; }
+        .navbar .dropdown:hover .dropdown-content { display: block; }
+        .navbar-title { color: white; font-size: 20px; font-weight: bold; margin-left: 15px; }
+        .presentations { text-align: center; background-color: white; padding: 20px; margin: 20px auto; width: 80%; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .presentations .content { text-align: left;}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">CCOM Grant Reporting</div>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="#">My Progress Reports</a>
+            <a href="#">Groups</a>
+            <a href="#">Archive</a>
+            <div class="dropdown">
+                <p href="#">Required Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Bio</a>
+                    <a href="#">Challenges</a>
+                    <a href="#">Effort Report and Contributions</a>
+                    <a href="narratives.html">Narratives</a>
+                    <a href="#">Future Direction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p href="#">Optional Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Attended</a>
+                    <a href="#">Award/Honor</a>
+                    <a href="#">Field Program</a>
+                    <a href="#">Graduate Education</a>
+                    <a href="#">Invention</a>
+                    <a href="#">Outreach</a>
+                    <a href="#">Seminars and Presentations</a>
+                    <a href="#">Visit Made</a>
+                    <a href="#">Visitor</a>
+                    <a href="#">Additional Information</a>
+                </div>
+            </div>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+    <div class="presentations">
+        <h2>Create Seminars and Presentations</h2>
+        <div class="content">
+            <p><p>This section is for seminars and presentations you have GIVEN, not attended. Enter any named talk or presentation you have given at conferences, workshops, visitations, or seminars. This talk could have been given at JHC/CCOM or abroad. Do NOT enter course lectures or other instructional presentations here. Also: remember that if you had an abstract for this presentation or talk, please enter it as a "Conference Abstract" in the <a href="http://wiki/index.php/CCOM_Progress_Report_System#Publications">Publications</a> module on the CCOM/JHC website.</p>
+            <p><strong>Section notes:</strong></p>
+            <ul>
+            <li>Title: name of seminar or talk</li>
+            <li>NOAA Related: Check if NOAA was involved in any way (other than NOAA OCS being the Center's primary funding agent). This includes any NOAA personnel working with you, visiting you, or doing this for or with any NOAA division or group.</li>
+            <li>Tagged CCOM Members: enter any personnel here only if they gave the presentation with you (coordinators don't count). As you type, a drop-down menu will automatically populate (when you stop typing). If the person’s name appears in the menu, click on it to add them. You may do this for multiple individuals. Do not worry about trying to tag people outside CCOM or JHC. This is not a required field.</li>
+            <li>Type of Presentation: select an option as to what type of presentation it was.</li>
+            <li>Organization: Organization you gave the talk to. This section will auto-populate; utilize existing entries if you can, otherwise type in the info and move to the next field.</li>
+            <li>Event: If this talk was at an event, enter the name of the event here. This section will auto-populate so utilize existing entries if you can, otherwise type in the info and move to the next field.</li>
+            <li>Date Given: Enter the date of the presentation. If it lasted more than one day, check the box labeled "Show End Date" and a second Date field will appear.</li>
+            <li>Location: Enter the city, state (if applicable) and country where the presentation was held.</li>
+            <li>Description: Write a general description here in two or three sentences. Keep this section brief — if there are specifics, or broader topics to discuss where this event is concerned, please put that info in the <a href="http://wiki/index.php/CCOM_Progress_Report_System#Narrative">Narrative</a> section of your report.</li>
+            </ul></p>
+
+            <form>
+                <label for="edit-title">Title</label><br>
+                <input type="text" id="edit-title" name="title" value="" size="60" maxlength="255">
+                <br><br>
+
+                <label for="edit-field-reporting-period-und">Reporting Period</label><br>
+                <select id="edit-field-reporting-period-und" name="field_reporting_period[und]" class="form-select required"><option value="1742">2024 December</option><option value="1729" selected="selected">2024 June</option><option value="1718">2023 December</option><option value="1703">2023 June</option><option value="1697">2022 December</option><option value="1686">2022 June</option><option value="1671">2021 December</option><option value="1662">2021 June</option><option value="1653">2020 December</option><option value="1647">2020 June</option><option value="1627">2019 December</option><option value="1616">2019 June</option><option value="1598">2018 December</option><option value="1589">2018 June</option><option value="1568">2017 December</option><option value="1554">2017 July</option><option value="1545">2016 December</option><option value="1440">2016 July</option><option value="1427">2015 December</option><option value="1418">2015 June</option><option value="1403">2014 December</option><option value="1384">2014 June</option><option value="1361">2013 December</option><option value="1360">2013 June</option><option value="1342">2012 December</option><option value="56">2012 June</option></select>
+                <br><br>
+
+                <input type="checkbox" id="edit-field-noaa-related-und" name="field_noaa_related[und]" value="1" class="form-checkbox" />  <label class="option" for="edit-field-noaa-related-und">NOAA Related </label>
+                <div class="description">If you interacted with NOAA staff members at all during this time, please check this box.</div>
+                <br><br>
+
+                <label for="edit-body-und-0-value">Description of Presentation</label><br>
+                <textarea class="text-full form-textarea" id="edit-body-und-0-value" name="body[und][0][value]" cols="60" rows="20"></textarea></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
