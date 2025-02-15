@@ -9,3 +9,4 @@ body { font-family: Arial, sans-serif; background-color: #f3f3f3; margin: 0; pad
 .navbar-title { color: white; font-size: 20px; font-weight: bold; margin-left: 15px; }
 .content { text-align: left; background-color: white; padding: 20px; margin: 20px auto; width: 80%; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 .content h2 { text-align: center;}
+.description {font-size: 12px;}
