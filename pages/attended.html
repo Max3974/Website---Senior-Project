@@ -1,0 +1,123 @@
+<!-- 
+     Created by:     Chase Cushman
+     Created on:     16 February 2025
+     Description:    Attended page is for the user to fill out the Attended form. This included information about attended events relating to UNH CCOM Projects.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Atended Only</title>
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">CCOM Grant Reporting</div>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="#">My Progress Reports</a>
+            <a href="#">Groups</a>
+            <a href="#">Archive</a>
+            <div class="dropdown">
+                <p href="#">Required Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Bio</a>
+                    <a href="challenges.html">Challenges</a>
+                    <a href="#">Effort Report and Contributions</a>
+                    <a href="narratives.html">Narratives</a>
+                    <a href="future-direction.html">Future Direction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p href="#">Optional Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Attended</a>
+                    <a href="award-honor.html">Award/Honor</a>
+                    <a href="#">Field Program</a>
+                    <a href="#">Graduate Education</a>
+                    <a href="#">Invention</a>
+                    <a href="#">Outreach</a>
+                    <a href="presentations.html">Seminars and Presentations</a>
+                    <a href="#">Visit Made</a>
+                    <a href="#">Visitor</a>
+                    <a href="additional-information.html">Additional Information</a>
+                </div>
+            </div>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Create Attended Only</h2>
+
+        <p><p>This section asks you to list any ATTENDED talks, symposiums, seminars (excluding the CCOM/OE Seminar Series), courses or training (independent of your graduate program), and any other event of note. If you gave a talk/seminar/etc., please utilize one of the other sections in this report.</p>
+            <p><strong>Section notes:</strong></p>
+            <ul>
+                <li>Title: name of the talk</li>
+                <li>NOAA Related: check if any NOAA division/group was involved in any way(other than NOAA OCS being the Center's primary funding agent). This includes any NOAA personnel working with you, visiting you, or doing this for or with any NOAA division or group.</li>
+                <li>Tagged CCOM Members: Enter any personnel here who may have attended with you. Do not worry about tagging people outside of CCOM or JHC. This is not the required field.</li>
+                <li>Organizer: Institution, organization, or person responsible for arranging the event.</li>
+                <li>Date: Enter the date. If the event lasted multiple days, check the box labeled "Show End Date" and second Date field will appear.</li>
+                <li>Funding Source: Who paid for you to attend (if applicable)? This is not a required field.</li>
+                <li>Location: Enter the city, state(if applicable), and the country where the event was held.</li>
+                <li>Notes: Write a general descrition here in two or three sentences. Keep this section brief. If there are specifics, or broader topics where this event is concerned, please put that info in the Narrative section of your report.</li>
+            </ul>
+        </p>
+
+        <form>
+            <label for="edit-title">Title <span class="form-required" title="This field is required.">*</span></label><br>
+            <input type="text" id="edit-title" name="title" value="" size="60" maxlength="255">
+            <br><br>
+
+            <label for="edit-field-reporting-period-und">Reporting Period <span class="form-required" title="This field is required.">*</span></label><br>
+            <select id="edit-field-reporting-period-und" name="field_reporting_period[und]" class="form-select required"><option value="1742">2024 December</option><option value="1729" selected="selected">2024 June</option><option value="1718">2023 December</option><option value="1703">2023 June</option><option value="1697">2022 December</option><option value="1686">2022 June</option><option value="1671">2021 December</option><option value="1662">2021 June</option><option value="1653">2020 December</option><option value="1647">2020 June</option><option value="1627">2019 December</option><option value="1616">2019 June</option><option value="1598">2018 December</option><option value="1589">2018 June</option><option value="1568">2017 December</option><option value="1554">2017 July</option><option value="1545">2016 December</option><option value="1440">2016 July</option><option value="1427">2015 December</option><option value="1418">2015 June</option><option value="1403">2014 December</option><option value="1384">2014 June</option><option value="1361">2013 December</option><option value="1360">2013 June</option><option value="1342">2012 December</option><option value="56">2012 June</option></select>
+            <br><br>
+
+            <input type="checkbox" id="edit-field-noaa-related-und" name="field_noaa_related[und]" value="1" class="form-checkbox" />  <label class="option" for="edit-field-noaa-related-und">NOAA Related </label>
+            <div class="description">If you interacted with NOAA staff members at all during this time, please check this box.</div>
+            <br><br>
+
+            <label for="edit-tagged-members">Tagged CCOM Members</label><br>
+            <input type="text" id="edit-tagged-members" name="tagged-members[und][0][value]" value="" size="60" maxlength="255">
+            <br><br>
+
+            <label for="edit-organizer">Organizer<span class="form-required" title="This field is required.">*</span></label><br>
+            <input type="text" id="edit-organizer" name="title" value="" size="60" maxlength="255">
+            <div class="description">Enter the name of the organizer here.</div>
+            <br><br>
+
+            <h3>Date</h3>
+            <p>The date you attended the event.</p>
+            <label for="edit-field-date-und-0-value">Start Date</label><br>
+            <input type="text" id="edit-field-date-und-0-value" name="field_date[und][0][value][date]" value="" size="20" maxlength="30">
+            <div class="description"> E.g., 02/15/2025</div>
+            <br><br>
+
+            <label for="edit-field-date-und-0-value2">End Date (if more than one day)</label><br>
+            <input type="text" id="edit-field-date-und-0-value2" name="field_date[und][0][value2][date]" value="" size="20" maxlength="30">
+            <div class="description"> E.g., 02/15/2025</div>
+            <br>
+
+            <label for="edit-funding-source">Funding Source</label><br>
+            <textarea class="text-full form-textarea" id="edit-body-und-0-value" name="body[und][0][value]" cols="60" rows="20"></textarea>
+            <div class="description">Enter the funding source here.</div>
+            <br>
+
+            <label for="edit-field-organization-und-0-value">Location</label><br>
+            <input type="text" id="edit-field-organization-und-0-value" name="field_organization[und][0][value]" value="" size="60" maxlength="255">
+            <div class="description">Enter the location of the event here.</div>
+            <br><br>
+
+            <label for="edit-field-organization-und-0-value">Notes</label><br>
+            <input type="text" id="edit-field-organization-und-0-value" name="field_organization[und][0][value]" value="" size="60" maxlength="255">
+            <div class="description">Enter a brief general description of the event.</div>
+            <br><br>
+
+            <input type="submit" id="edit-submit" name="op" value="Save" class="form-submit">
+
+                            <!-- Add Attended database Node.js script to push and pull text from Attended table -->
+        </form>
+    </div>
+</body>
+</html>
