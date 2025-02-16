@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">CCOM Grant Reporting</div>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="#">My Progress Reports</a>
+            <a href="#">Groups</a>
+            <a href="#">Archive</a>
+            <div class="dropdown">
+                <p href="#">Required Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Bio</a>
+                    <a href="challenges.html">Challenges</a>
+                    <a href="#">Effort Report and Contributions</a>
+                    <a href="narratives.html">Narratives</a>
+                    <a href="future-direction.html">Future Direction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p href="#">Optional Forms</p>
+                <div class="dropdown-content">
+                    <a href="#">Attended</a>
+                    <a href="award-honor.html">Award/Honor</a>
+                    <a href="#">Field Program</a>
+                    <a href="#">Graduate Education</a>
+                    <a href="#">Invention</a>
+                    <a href="#">Outreach</a>
+                    <a href="presentations.html">Seminars and Presentations</a>
+                    <a href="#">Visit Made</a>
+                    <a href="#">Visitor</a>
+                    <a href="additional-information.html">Additional Information</a>
+                </div>
+            </div>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Personal Biography</h2>
+
+        <p>This is a brief, formal biography that will appear in the JHC annual report. Please provide several succinct sentences outlining education, experience, focus of research, notable awards and achievements, etc.</p>
+            <label for="edit-body-und-0-value">Bio</label><br>
+            <textarea class="text-full form-textarea" id="edit-body-und-0-value" name="body[und][0][value]" cols="100" rows="40"></textarea>
+            <br>
+      
+                                            <!-- Add Bio database Node.js script to push and pull text from Biography table -->
+      
+            <input type="submit" id="edit-submit" name="op" value="Save" class="form-submit">
+        </form>
+    </div>
+</body>
+</html>
