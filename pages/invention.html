@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Invention</title>
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">CCOM Grant Reporting</div>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="#">My Progress Reports</a>
+            <a href="#">Groups</a>
+            <a href="#">Archive</a>
+            <div class="dropdown">
+                <p>Required Forms</p>
+                <div class="dropdown-content">
+                    <a href="bio.html">Bio</a>
+                    <a href="challenges.html">Challenges</a>
+                    <a href="#">Effort Report and Contributions</a>
+                    <a href="narratives.html">Narratives</a>
+                    <a href="future-direction.html">Future Direction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>Optional Forms</p>
+                <div class="dropdown-content">
+                    <a href="attended.html">Attended</a>
+                    <a href="award-honor.html">Award/Honor</a>
+                    <a href="field-program.html">Field Program</a>
+                    <a href="#">Graduate Education</a>
+                    <a href="invention.html">Invention</a>
+                    <a href="#">Outreach</a>
+                    <a href="presentations.html">Seminars and Presentations</a>
+                    <a href="#">Visit Made</a>
+                    <a href="#">Visitor</a>
+                    <a href="additional-information.html">Additional Information</a>
+                </div>
+            </div>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Create Invention</h2>
+
+        <p>If you've invented something you plan to submit to the Office for Research Partnerships and Commercialization (ORPC) at UNH, or had a role in inventing something during this reporting period which will be submitted to ORPC, enter it here. Software may count as an invented item if you plan to patent or license it, so if you think it's patent-able, talk to your supervisor before filling this section out.</p>
+        <p>Section Notes:</p>
+        <ul>
+            <li>Title: name of the invention</li>
+            <li>NOAA Related: check if NOAA was involved in any way (other than NOAA OCS being the Center's primary funding agent). This includes any NOAA personnel working with you, visiting you, or doing this for or with NOAA division or group.</li>
+            <li>Tagged CCOM Members: other JHC/CCOM personnel who may also be creditied with this invention. Do not tag an individual if they did work on it but cannot be credited with the invention. As you type, a drop-down menu will automatically populate (when you stop typing) - if the person appears in the menu, click on them to add them. You may do this for multiple individuals. Do not worry about trying to tag people outside CCOM or JHC. This is not a required field.</li>
+            <li>Submitted to ORPC: select whether or not your invention has been submitted to ORPC. </li>
+            <li>Date Submitted to ORPC: if it has been submitted, specify the date in the format suggested in the field.</li>
+            <li>Description of Intention: Write a general description here in two or three sentences. Keep this section brief - if there are specifics, or broader topics to discuss where this event is concerned, please put that info in the <a href="/index.php/CCOM_Progress_Report_System#Narrative" title="CCOM Progress Report System">Narrative</a> section of your report.</li>
+        </ul>
+
+        <form>
+            <label for="edit-title">Title <span class="form-required" title="This field is required.">*</span></label><br>
+            <input type="text" id="edit-title" name="title" value="" size="60" maxlength="255">
+            <br><br>
+
+            <label for="edit-field-reporting-period-und">Reporting Period <span class="form-required" title="This field is required.">*</span></label><br>
+            <select id="edit-field-reporting-period-und" name="field_reporting_period[und]" class="form-select required"><option value="1742">2024 December</option><option value="1729" selected="selected">2024 June</option><option value="1718">2023 December</option><option value="1703">2023 June</option><option value="1697">2022 December</option><option value="1686">2022 June</option><option value="1671">2021 December</option><option value="1662">2021 June</option><option value="1653">2020 December</option><option value="1647">2020 June</option><option value="1627">2019 December</option><option value="1616">2019 June</option><option value="1598">2018 December</option><option value="1589">2018 June</option><option value="1568">2017 December</option><option value="1554">2017 July</option><option value="1545">2016 December</option><option value="1440">2016 July</option><option value="1427">2015 December</option><option value="1418">2015 June</option><option value="1403">2014 December</option><option value="1384">2014 June</option><option value="1361">2013 December</option><option value="1360">2013 June</option><option value="1342">2012 December</option><option value="56">2012 June</option></select>
+            <br><br>
+
+            <input type="checkbox" id="edit-field-noaa-related-und" name="field_noaa_related[und]" value="1" class="form-checkbox">  <label class="option" for="edit-field-noaa-related-und">NOAA Related </label>
+            <div class="description">If you interacted with NOAA staff members at all during this time, please check this box.</div>
+            <br>
+
+            <label for="edit-field-date-und-0-value">Date Completed</label><br>
+            <input type="text" id="edit-field-date-und-0-value" name="field_date[und][0][value][date]" value="" size="20" maxlength="30">
+            <div class="description"> E.g., 2025-02-15</div>
+            <br>
+
+            <div>Submitted to ORPC <span class="form-required" title="This field is required.">*</span></div>
+            <div id="edit-field-submitted-to-orpc-und" class="form-radios">
+                <div class="form-item form-type-radio form-item-field-submitted-to-orpc-und">
+                    <input type="radio" id="edit-field-submitted-to-orpc-und-0" name="field_submitted_to_orpc[und]" value="0" checked="checked" class="form-radio">
+                    <label class="option" for="edit-field-submitted-to-orpc-und-0">Not Submitted to ORPC </label>             
+                </div>
+                <div class="form-item form-type-radio form-item-field-submitted-to-orpc-und">
+                    <input type="radio" id="edit-field-submitted-to-orpc-und-1" name="field_submitted_to_orpc[und]" value="1" class="form-radio">
+                    <label class="option" for="edit-field-submitted-to-orpc-und-1">Submitted to ORPC </label>
+                </div>
+            </div>
+            <div class="description">Check this box if you submitted your invention to ORPC (Office for Research Partnerships &amp; Commercialization).  If you have submitted it, also specify the date you submitted your invention below.</div>
+            <br>
+
+            <label for="edit-field-date-submitted-to-orpc-und-0-value">Date Submitted to ORPC</label><br>
+            <input type="text" id="edit-field-date-submitted-to-orpc-und-0-value" name="field_date_submitted_to_orpc[und][0][value][date]" value="" size="20" maxlength="30">
+            <div class="description"> E.g., 2025-02-15</div>
+            <br>
+
+            <label for="edit-body-und-0-value">Description of Invention</label><br>
+            <textarea class="text-full form-textarea" id="edit-body-und-0-value" name="body[und][0][value]" cols="60" rows="20"></textarea>
+            <br>
+
+            <input type="submit" id="edit-submit" name="op" value="Save" class="form-submit">
+        </form>
+    </div>
+</body>
+</html>
