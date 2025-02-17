@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Award/Honor</title>
+    <title>Create Graduate Education</title>
     <link rel="stylesheet" href="../css/general.css">
 </head>
 <body>
@@ -43,17 +43,16 @@
         </div>
     </div>
     <div class="content">
-        <h2>Create Award/Honor</h2>
+        <h2>Create Graduate Education</h2>
 
-        <p>If you've been showered with any awards or honors in this report period, here is the place to list it. Do not enter graduate degrees earned in this section - the Graduate Education section is reserved for that. Examples of awards/honors include certifications (Cat. A Hydrography, technical certifications, CPR, NOAA Safety Certificate, etc.), academic awards (UNH Faculty/Staff Excellence Awards, Nobel Prize, etc.), or state/agency awards (NOAA/USN/USCG medals, Medal of Freedom, Victoria Cross, etc.).</p>
-        <p><strong>Section notes:</strong></p>
+        <p>If you are currently enrolled in a UNH or related graduate program, or you are an advisor of a student in a UNH or related graduate program, please fill out this section. This should only be used for programs that you are currently participating in, or have during this reporting period. Do not report on earned degrees or advised students from a previous evaluation period in this section. If you are and advisor to multiple students, or are enrolled in multiple degree programs, please create a seperate entry for each.</p>
+        <p>This section is only viewable by you and by the Progress Report staff.</p>
+        <p>Section notes:</p>
         <ul>
-            <li>Title: name of award or honor</li>
-            <li>NOAA Related: check if any NOAA division/group was involved, in any way, in the act of funding, facilitating, or giving the honor.</li>
-            <li>Tagged CCOM Members: other JHC/CCOM personnel who may have also received the award. Do not tag an individual who did not receive an award/honor. This is an optional field. As you type, a drop-down menu will automatically populate (when you stop typing). If the person’s name appears in the menu, click on it to add them. You may do this for multiple individuals. Do not worry about trying to tag people outside CCOM or JHC. This is not a required field.</li>
-            <li>From Organization: Who bestowed the award/honor upon you? This section will also auto-populate; utilize existing entries if you can, otherwise type in the info and move to the next field. This is a required field.</li>
-            <li>Date: Enter the date of receipt. If the award spanned multiple days, check the box labeled "Show End Date" and second Date field will appear.</li>
-            <li>Description of Award: Write a description here in a sentence or two. Keep this section brief — if there are specifics, or broader topics to discuss where this event is concerned, please put that info in the Narrative section of your report.</li>
+            <li>Title: This should be the name of the degree program, whether you are a student or an advisor. Ex: "Graduate Program, Earth Sciences, University of New Hampshire", or "Doctoral Program, Ocean Engineering, University of New Hampshire"</li>
+            <li>Education Role: specify with the radio buttons if you are a student or advisor.</li>
+            <li>Progress: specify using the radio buttons if the program has been completed or is in progress during this period.</li>
+            <li>Description of Progress: Use this field to talk about the specifics of the degree program, focus of the research, whether it's Thesis/Project Master's, courses taken or given, and anything else that might be relevant to the program. It is recommended to keep this section somewhat brief; if there are broader topics to discuss where this is concerned, it might make more sense to put it in the narrative.</li>
         </ul>
 
         <form>
@@ -65,27 +64,35 @@
             <select id="edit-field-reporting-period-und" name="field_reporting_period[und]" class="form-select required"><option value="1742">2024 December</option><option value="1729" selected="selected">2024 June</option><option value="1718">2023 December</option><option value="1703">2023 June</option><option value="1697">2022 December</option><option value="1686">2022 June</option><option value="1671">2021 December</option><option value="1662">2021 June</option><option value="1653">2020 December</option><option value="1647">2020 June</option><option value="1627">2019 December</option><option value="1616">2019 June</option><option value="1598">2018 December</option><option value="1589">2018 June</option><option value="1568">2017 December</option><option value="1554">2017 July</option><option value="1545">2016 December</option><option value="1440">2016 July</option><option value="1427">2015 December</option><option value="1418">2015 June</option><option value="1403">2014 December</option><option value="1384">2014 June</option><option value="1361">2013 December</option><option value="1360">2013 June</option><option value="1342">2012 December</option><option value="56">2012 June</option></select>
             <br><br>
 
-            <input type="checkbox" id="edit-field-noaa-related-und" name="field_noaa_related[und]" value="1" class="form-checkbox">  <label class="option" for="edit-field-noaa-related-und">NOAA Related </label>
-            <div class="description">If you interacted with NOAA staff members at all during this time, please check this box.</div>
+            <div>Education Role <span class="form-required" title="This field is required.">*</span></div>
+            <div id="edit-field-education-role-und" class="form-radios">
+                <div class="form-item form-type-radio form-item-field-education-role-und">
+                    <input type="radio" id="edit-field-education-role-und-1344" name="field_education_role[und]" value="1344" class="form-radio">
+                    <label class="option" for="edit-field-education-role-und-1344">Advisor </label>
+                </div>
+                <div class="form-item form-type-radio form-item-field-education-role-und">
+                    <input type="radio" id="edit-field-education-role-und-1343" name="field_education_role[und]" value="1343" class="form-radio">
+                    <label class="option" for="edit-field-education-role-und-1343">Student </label>
+                </div>
+            </div>
+            <div class="description">You are a...</div>
             <br>
 
-            <label for="edit-field-organization-und-0-value">From Organization </label><br>
-            <input type="text" id="edit-field-organization-und-0-value" name="field_organization[und][0][value]" value="" size="60" maxlength="255">
+            <div>Progress <span class="form-required" title="This field is required.">*</span></div>
+            <div id="edit-field-progress-und" class="form-radios">
+                <div class="form-item form-type-radio form-item-field-progress-und">
+                    <input type="radio" id="edit-field-progress-und-1338" name="field_progress[und]" value="1338" class="form-radio">
+                    <label class="option" for="edit-field-progress-und-1338">Completed </label>
+                </div>
+                <div class="form-item form-type-radio form-item-field-progress-und">
+                    <input type="radio" id="edit-field-progress-und-1337" name="field_progress[und]" value="1337" class="form-radio">
+                    <label class="option" for="edit-field-progress-und-1337">In progress </label>
+                </div>
+            </div>
+            <div class="description">You must specify the current progress of this graduate education here.</div>
             <br>
 
-            <h3>Date</h3>
-            <p>The date you received the award, or the date the award was issued.</p>
-            <label for="edit-field-date-und-0-value">Start Date</label><br>
-            <input type="text" id="edit-field-date-und-0-value" name="field_date[und][0][value][date]" value="" size="20" maxlength="30">
-            <div class="description"> E.g., 02/15/2025</div>
-            <br>
-
-            <label for="edit-field-date-und-0-value2">End Date (if more than one day)</label><br>
-            <input type="text" id="edit-field-date-und-0-value2" name="field_date[und][0][value2][date]" value="" size="20" maxlength="30">
-            <div class="description"> E.g., 02/15/2025</div>
-            <br>
-
-            <label for="edit-body-und-0-value">Description of Award <span class="form-required" title="This field is required.">*</span></label><br>
+            <label for="edit-body-und-0-value">Description of Progress <span class="form-required" title="This field is required.">*</span></label><br>
             <textarea class="text-full form-textarea" id="edit-body-und-0-value" name="body[und][0][value]" cols="60" rows="20"></textarea>
             <br>
 
