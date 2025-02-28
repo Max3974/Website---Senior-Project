@@ -10,3 +10,10 @@ body { font-family: Arial, sans-serif; background-color: #f3f3f3; margin: 0; pad
 .content { text-align: left; background-color: white; padding: 20px; margin: 20px auto; width: 80%; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 .content h2 { text-align: center;}
 .description {font-size: 12px;}
+.element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effort Report and Contribution</title>
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">CCOM Grant Reporting</div>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="#">My Progress Reports</a>
+            <a href="#">Groups</a>
+            <a href="#">Archive</a>
+            <div class="dropdown">
+                <p>Required Forms</p>
+                <div class="dropdown-content">
+                    <a href="bio.html">Bio</a>
+                    <a href="challenges.html">Challenges</a>
+                    <a href="#">Effort Report and Contributions</a>
+                    <a href="narratives.html">Narratives</a>
+                    <a href="future-direction.html">Future Direction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>Optional Forms</p>
+                <div class="dropdown-content">
+                    <a href="attended.html">Attended</a>
+                    <a href="award-honor.html">Award/Honor</a>
+                    <a href="field-program.html">Field Program</a>
+                    <a href="graduate-education.html">Graduate Education</a>
+                    <a href="invention.html">Invention</a>
+                    <a href="outreach.html">Outreach</a>
+                    <a href="presentations.html">Seminars and Presentations</a>
+                    <a href="#">Visit Made</a>
+                    <a href="#">Visitor</a>
+                    <a href="additional-information.html">Additional Information</a>
+                </div>
+            </div>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Effort Report and Contribution</h2>
+
+        <p>The table below will be pre-populated with the number of months your effort is spent working towards JHC-sponsored work, and non-JHC-sponsored work.</p>
+        <p><strong>If this section is not populated, or you think it has the incorrect number of months, please contact the CCOM admin staff to correct this: <a href="mailto:admin@ccom.unh.edu">admin@ccom.unh.edu</a></strong></p>
+        <p>In the left column, enter for each JHC research theme, the percentage of the number of months at the top of the column that you expended on that theme. The percentages in this column MUST add up to 100%. The form will not allow you to submit until they do.</p>
+        <p>In the right column, enter for each theme the number of months of effort not supported by JHC but that you think may plausibly be associated with the theme. Please enter whole numbers only (round to the best of your ability). The total in the right column cannot exceed the total effort at the top of the right column (total non-JHC supported time). There is no lower limit – if your other effort had nothing to do with the JHC grant, you would just enter zeros in all of the rows.</p>
+
+        <form>
+            <label for="edit-field-reporting-period-und">Reporting Period <span class="form-required" title="This field is required.">*</span></label><br>
+            <select disabled="disabled" id="edit-field-reporting-period-und" name="field_reporting_period[und]" class="form-select required"><option value="1742" selected="selected">2024 December</option><option value="1729">2024 June</option><option value="1718">2023 December</option><option value="1703">2023 June</option><option value="1697">2022 December</option><option value="1686">2022 June</option><option value="1671">2021 December</option><option value="1662">2021 June</option><option value="1653">2020 December</option><option value="1647">2020 June</option><option value="1627">2019 December</option><option value="1616">2019 June</option><option value="1598">2018 December</option><option value="1589">2018 June</option><option value="1568">2017 December</option><option value="1554">2017 July</option><option value="1545">2016 December</option><option value="1440">2016 July</option><option value="1427">2015 December</option><option value="1418">2015 June</option><option value="1403">2014 December</option><option value="1384">2014 June</option><option value="1361">2013 December</option><option value="1360">2013 June</option><option value="1342">2012 December</option><option value="56">2012 June</option></select>
+            <br><br>
+
+            <table id="effort_report">
+                <tr style="color:#FFF; font-weight:bold; background: #5CB85C;">
+                    <td>Sponsored Months  for 1906</td>
+                    <td>
+                        <div class="form-item form-type-textfield form-item-sponsored-jhc form-disabled">
+                            <input disabled="disabled" type="text" id="edit-sponsored-jhc" name="sponsored_jhc" value="" size="3" maxlength="3" class="form-text">
+                            Months
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-item form-type-textfield form-item-sponsored-non-jhc form-disabled">
+                            <input disabled="disabled" type="text" id="edit-sponsored-non-jhc" name="sponsored_non_jhc" value="12" size="3" maxlength="3" class="form-text">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="edit-header-text" class="form-item form-type-item"><h3>Research Requirement</h3></td>
+                    <td id="edit-jhc-text" class="form-item form-type-item"><h3>JHC</h3></td>
+                    <td id="edit-non-jhc-text" class="form-item form-type-item"><h3>Non-JHC</h3></td>
+                </tr>
+
+                <tr>
+                    <td id = data_collection_title>
+                        Data Collection
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'data_collection'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = data_collection_jhc>
+                        <div class="form-item form-type-textfield form-item-data-collection-jhc">
+                            <label class="element-invisible" for="edit-data-collection-jhc">Data Collection - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-data-collection-jhc" name="data_collection_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = data_collection_non_jhc>
+                        <div class="form-item form-type-textfield form-item-data-collection-non-jhc">
+                            <label class="element-invisible" for="edit-data-collection-non-jhc">Data Collection - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-data-collection-non-jhc" name="data_collection_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = data_processing_title>
+                        Data Processing
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'data_processing'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = data_processing_jhc>
+                        <div class="form-item form-type-textfield form-item-data-processing-jhc">
+                            <label class="element-invisible" for="edit-data-processing-jhc">Data Processing - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-data-processing-jhc" name="data_processing_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = data_processing_non_jhc>
+                        <div class="form-item form-type-textfield form-item-data-processing-non-jhc">
+                            <label class="element-invisible" for="edit-data-processing-non-jhc">Data Processing - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-data-processing-non-jhc" name="data_processing_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id = seafloor_character_title>Seafloor Characterization Habitat and Resources
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'seafloor_character'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = seafloor_character_jhc>
+                        <div class="form-item form-type-textfield form-item-seafloor-character-jhc">
+                            <label class="element-invisible" for="edit-seafloor-character-jhc">Seafloor Characterization Habitat and Resources - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-seafloor-character-jhc" name="seafloor_character_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = seafloor_character_non_jhc>
+                        <div class="form-item form-type-textfield form-item-seafloor-character-non-jhc">
+                            <label class="element-invisible" for="edit-seafloor-character-non-jhc">Seafloor Characterization Habitat and Resources - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-seafloor-character-non-jhc" name="seafloor_character_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id = non_trad_data_title>Third Party and Non Traditional Data
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'non_trad_data'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = non_trad_data_jhc>
+                        <div class="form-item form-type-textfield form-item-non-trad-data-jhc">
+                            <label class="element-invisible" for="edit-non-trad-data-jhc">Third Party and Non Traditional Data - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-non-trad-data-jhc" name="non_trad_data_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = non_trad_data_non_jhc>
+                        <div class="form-item form-type-textfield form-item-non-trad-data-non-jhc">
+                            <label class="element-invisible" for="edit-non-trad-data-non-jhc">Third Party and Non Traditional Data - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-non-trad-data-non-jhc" name="non_trad_data_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = chart_adequacy_title>Chart Adequacy and Computer-Assisted Cartography
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'chart_adequacy'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = chart_adequacy_jhc>
+                        <div class="form-item form-type-textfield form-item-chart-adequacy-jhc">
+                            <label class="element-invisible" for="edit-chart-adequacy-jhc">Chart Adequacy and Computer-Assisted Cartography - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-chart-adequacy-jhc" name="chart_adequacy_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = chart_adequacy_non_jhc>
+                        <div class="form-item form-type-textfield form-item-chart-adequacy-non-jhc">
+                            <label class="element-invisible" for="edit-chart-adequacy-non-jhc">Chart Adequacy and Computer-Assisted Cartography - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-chart-adequacy-non-jhc" name="chart_adequacy_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = comprehen_charts_title>Comprehensive Charts and Decision Aids
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'comprehen_charts'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = comprehen_charts_jhc>
+                        <div class="form-item form-type-textfield form-item-comprehen-charts-jhc">
+                            <label class="element-invisible" for="edit-comprehen-charts-jhc">Comprehensive Charts and Decision Aids - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-comprehen-charts-jhc" name="comprehen_charts_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = comprehen_charts_non_jhc>
+                        <div class="form-item form-type-textfield form-item-comprehen-charts-non-jhc">
+                            <label class="element-invisible" for="edit-comprehen-charts-non-jhc">Comprehensive Charts and Decision Aids - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-comprehen-charts-non-jhc" name="comprehen_charts_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = visualization_title>Visualization and Resource Management
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'visualization'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = visualization_jhc>
+                        <div class="form-item form-type-textfield form-item-visualization-jhc">
+                            <label class="element-invisible" for="edit-visualization-jhc">Visualization and Resource Management - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-visualization-jhc" name="visualization_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = visualization_non_jhc>
+                        <div class="form-item form-type-textfield form-item-visualization-non-jhc">
+                            <label class="element-invisible" for="edit-visualization-non-jhc">Visualization and Resource Management - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-visualization-non-jhc" name="visualization_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = ecs_title>Extended Continental Shelf
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'ecs'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = ecs_jhc>
+                        <div class="form-item form-type-textfield form-item-ecs-jhc">
+                            <label class="element-invisible" for="edit-ecs-jhc">Extended Continental Shelf - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-ecs-jhc" name="ecs_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = ecs_non_jhc>
+                        <div class="form-item form-type-textfield form-item-ecs-non-jhc">
+                            <label class="element-invisible" for="edit-ecs-non-jhc">Extended Continental Shelf - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-ecs-non-jhc" name="ecs_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = ocean_exploration_title>Ocean Exploration
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'ocean_exploration'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = ocean_exploration_jhc>
+                        <div class="form-item form-type-textfield form-item-ocean-exploration-jhc">
+                            <label class="element-invisible" for="edit-ocean-exploration-jhc">Ocean Exploration - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-ocean-exploration-jhc" name="ocean_exploration_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = ocean_exploration_non_jhc>
+                        <div class="form-item form-type-textfield form-item-ocean-exploration-non-jhc">
+                            <label class="element-invisible" for="edit-ocean-exploration-non-jhc">Ocean Exploration - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-ocean-exploration-non-jhc" name="ocean_exploration_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = telepresence_title>Telepresence and ROVs
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'telepresence'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = telepresence_jhc>
+                        <div class="form-item form-type-textfield form-item-telepresence-jhc">
+                            <label class="element-invisible" for="edit-telepresence-jhc">Telepresence and ROVs - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-telepresence-jhc" name="telepresence_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = telepresence_non_jhc>
+                        <div class="form-item form-type-textfield form-item-telepresence-non-jhc">
+                            <label class="element-invisible" for="edit-telepresence-non-jhc">Telepresence and ROVs - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-telepresence-non-jhc" name="telepresence_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = education_title>Education
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'education'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = education_jhc>
+                        <div class="form-item form-type-textfield form-item-education-jhc">
+                            <label class="element-invisible" for="edit-education-jhc">Education - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-education-jhc" name="education_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = education_non_jhc>
+                        <div class="form-item form-type-textfield form-item-education-non-jhc">
+                            <label class="element-invisible" for="edit-education-non-jhc">Education - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-education-non-jhc" name="education_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = acoustic_prop_title>Acoustic Propagation and Marine Mammals
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'acoustic_prop'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = acoustic_prop_jhc>
+                        <div class="form-item form-type-textfield form-item-acoustic-prop-jhc">
+                            <label class="element-invisible" for="edit-acoustic-prop-jhc">Acoustic Propagation and Marine Mammals - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-acoustic-prop-jhc" name="acoustic_prop_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = acoustic_prop_non_jhc>
+                        <div class="form-item form-type-textfield form-item-acoustic-prop-non-jhc">
+                            <label class="element-invisible" for="edit-acoustic-prop-non-jhc">Acoustic Propagation and Marine Mammals - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-acoustic-prop-non-jhc" name="acoustic_prop_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = publications_r2o_title>Publications and R2O
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'publications_r2o'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = publications_r2o_jhc>
+                        <div class="form-item form-type-textfield form-item-publications-r2o-jhc">
+                            <label class="element-invisible" for="edit-publications-r2o-jhc">Publications and R2O - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-publications-r2o-jhc" name="publications_r2o_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = publications_r2o_non_jhc>
+                        <div class="form-item form-type-textfield form-item-publications-r2o-non-jhc">
+                            <label class="element-invisible" for="edit-publications-r2o-non-jhc">Publications and R2O - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-publications-r2o-non-jhc" name="publications_r2o_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = outreach_title>Outreach
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'outreach'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = outreach_jhc>
+                        <div class="form-item form-type-textfield form-item-outreach-jhc">
+                            <label class="element-invisible" for="edit-outreach-jhc">Outreach - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-outreach-jhc" name="outreach_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = outreach_non_jhc>
+                        <div class="form-item form-type-textfield form-item-outreach-non-jhc">
+                            <label class="element-invisible" for="edit-outreach-non-jhc">Outreach - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-outreach-non-jhc" name="outreach_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = data_management_title>Extended Data Management Practice
+                        <span class = 'form-required' title = 'This field is required'>*</span>
+                        <span class = 'hover-help' title = 'data_management'><img src='../images/help.png' alt=""></span>
+                    </td>
+                    <td class = jhc id = data_management_jhc>
+                        <div class="form-item form-type-textfield form-item-data-management-jhc">
+                            <label class="element-invisible" for="edit-data-management-jhc">Extended Data Management Practice - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-data-management-jhc" name="data_management_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td class = non_jhc id = data_management_non_jhc>
+                        <div class="form-item form-type-textfield form-item-data-management-non-jhc">
+                            <label class="element-invisible" for="edit-data-management-non-jhc">Extended Data Management Practice - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" id="edit-data-management-non-jhc" name="data_management_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id = subtotal_title>Totals</td>
+                    <td id = total_jhc>
+                        <div class="form-item form-type-textfield form-item-total-jhc form-disabled">
+                            <label class="element-invisible" for="edit-total-jhc">Total - JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input disabled="disabled" type="text" id="edit-total-jhc" name="total_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            %
+                        </div>
+                    </td>
+                    <td id = total_non_jhc>
+                        <div class="form-item form-type-textfield form-item-total-non-jhc form-disabled">
+                            <label class="element-invisible" for="edit-total-non-jhc">Total - Non-JHC <span class="form-required" title="This field is required.">*</span></label>
+                            <input disabled="disabled" type="text" id="edit-total-non-jhc" name="total_non_jhc" value="0" size="3" maxlength="3" class="form-text required">
+                            Months
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr><td colspan = 3 style="text-align: center;"><input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit"></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
