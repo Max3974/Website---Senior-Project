@@ -12,12 +12,12 @@ app.get("/narratives.html", (req, res) => {
 // mock response for task narratives assigned to a user
 const mockTaskNarrativesByUser = {
     1: [
-      { id: 2, title: "Task 2" },
+      { id: 2, title: "Task 2: Underway Sensor Integration Monitoring" },
     ],
     2: [
-      { id: 1, title: "Task 1" },
-      { id: 2, title: "Task 2" },
-      { id: 3, title: "Task 3" },
+      { id: 1, title: "Task 1: System Performance Assessment" },
+      { id: 2, title: "Task 2: Underway Sensor Integration Monitoring" },
+      { id: 3, title: "Task 3: Backscatter Calibration" },
     ],
     3: [],
   };
