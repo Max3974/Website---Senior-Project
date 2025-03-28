@@ -2,9 +2,11 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+app.use(express.static(path.join(__dirname, "..")));
+
 // endpoint to serve the HTML file
 app.get("/narratives.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "narratives.html"));
+  res.sendFile(path.join(__dirname, "..", "pages", "narratives_js.html"));
 });
 
 // mock response for task narratives assigned to a user
